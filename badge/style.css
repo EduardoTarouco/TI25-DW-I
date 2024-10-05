@@ -1,0 +1,62 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --background-basico: #a9a587;
+    --svg: #730071;
+    --badge-rosa: pink;
+    --badge-amarelo: orange;
+    --badge-preto: #000;
+    --badge-branco: #fff;
+}
+
+#background {
+    padding: 1.5em 1em;
+    border: none solid black;
+    border-radius: 6px;
+    margin: 1rem;
+    background-color: var(--background-basico);
+}
+
+#conteudo {
+    margin-left: .6em;
+}
+
+#svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--svg);
+}
+
+#texto {
+    padding: .6em 0em;
+    font-weight: 900;
+}
+
+.tags {
+    margin-top: .2em;
+}
+
+.item-tag {
+    display: inline;
+    height: .4em;
+    width: .8em;
+    background-color: purple;
+    color: green;
+    padding: .3em .7em;
+    border-radius: 12px;
+    margin-right: .2em;
+}
+
+#trabalho {
+    background-color: var(--badge-preto);
+    color: var(--badge-branco);
+} #casa {
+    background-color: var(--badge-rosa);
+    color: var(--badge-preto);
+} #ferias {
+    background-color: var(--badge-amarelo);
+    color: var(--badge-preto);
+}
