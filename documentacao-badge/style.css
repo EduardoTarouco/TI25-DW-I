@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --badge-background: #EBF2F2;
+    --note-background: #055983;
+    --white: #FFF;
+    --text-color: #282F2E;
+}
+
+html, body {
+    height: 100%;
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-color);
+    }
+}
+
+#badge {
+    position: relative;
+    background-color: var(--badge-background);
+    border-radius: 3px;
+    width: 45%;
+    padding: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+
+    code {
+        background-color: #DAE1E1;
+        padding: 0 .1em;
+    }
+    #note {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--note-background);
+        color: var(--white);
+        width: 5rem;
+        height: 1em;
+        padding: .2em;
+        border-radius: 8px;
+        position: absolute;
+        top: -1em;
+        left: -6px;
+        font-weight: 100;
+
+        svg {
+            fill: var(--white);
+            height: 15px;
+            padding-right: .5em;
+            margin-right: .5em;
+            border-right: 1px solid rgba(255, 255, 255, .3);
+        }
+    }
+}
