@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --light-gray: #808080;
+
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+
+    svg {
+        fill: red;
+        height: 3.5rem;
+        width: 3.5rem;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+#video {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 600px;
+    min-height: 250px;
+    background-color: var(--black);
+    border-radius: .4rem;
+    border-bottom: 3px solid red;
+    overflow: hidden;
+
+    * {
+        visibility: hidden;
+    }
+
+    &:hover {
+        * {
+            visibility: visible;
+        }
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        width: 2.5rem;
+        height: 2.5rem;
+
+        &:hover {
+            background-color: var(--light-gray);
+        }
+
+        svg {
+            cursor: pointer;
+            fill: var(--white);
+            height: 1.4rem;
+            width: 1.4rem;
+        }
+    }
+
+    .gap {
+        display: flex;
+        align-items: center;
+        margin: .5rem;
+    }
+
+    .options {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .controller {
+        & :nth-child(2) {
+            scale: 1.5;
+            margin: 0 .3rem;
+        }
+    }
+
+    .expand {
+        scale: .9;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 0;
+    align-items: center;
+
+    .like-btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+        border-radius: 1.2rem;
+        padding: .4rem .5rem;
+        background-color: var(--black);
+        color: var(--white);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+
+        svg {
+            fill: var(--white);
+            height: 1.2em;
+            width: 1.2em;
+        }
+    }
+}
